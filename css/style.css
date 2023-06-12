@@ -2218,7 +2218,8 @@ opacity: 0.8;
 }
 
 .display-1{
-  font-size: 5.14rem;
+  font-size: 4.50rem;
+  /* word-break: break-all; */
   line-height: 1;
   letter-spacing: -0.05em;
   margin: 0;
