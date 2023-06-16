@@ -326,7 +326,7 @@
       	$('.pagepiling').pagepiling({
     		scrollingSpeed: 280,
 		    menu: '.menu-pagepiling',
-		    anchors: ['main', 'about', 'projects',  'testimonials', 'contacts'],
+		    anchors: ['main', 'about', 'projects', 'partners',  'testimonials', 'contacts'],
 		    afterLoad: function(anchorLink, index){
 		    	if ($('.pp-scrollable:nth-child(' + (index) + ')').hasClass(('section-white'))){ 
 		            $('.navbar').removeClass('navbar-white');
@@ -433,3 +433,12 @@
 	}
 
 })(jQuery);
+
+
+const toggles = document.querySelectorAll('.faq-toggle')
+
+toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active')
+    })
+})
